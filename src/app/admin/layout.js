@@ -12,6 +12,9 @@ export default function AdminLayout({ children }) {
             <IconKey size={20} /> Hak Akses
           </button>
           <button className="flex gap-2 items-center px-2 py-1 hover:bg-gray-100 rounded text-black">
+            <IconKey size={20} /> news 
+            </button>
+          <button className="flex gap-2 items-center px-2 py-1 hover:bg-gray-100 rounded text-black">
             <IconLogout size={20} /> Logout
           </button>
         </div>
