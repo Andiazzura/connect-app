@@ -12,7 +12,7 @@ export default function Users_Page() {
      data: users, 
      error, 
      isLoading
-     } = useSWR(`https://jsonplaceholder.typicode.com/users`, fetcher);
+     } = useSWR(`https://jsonplaceholder.typicode.com/post`, fetcher);
 
     if(isLoading) {
       return(
@@ -43,10 +43,10 @@ export default function Users_Page() {
           {users.map((employee, index) => (
             <UserCard
               key={index}
-              fullname={employee.name}
-              email={employee.email}
-              role={employee.address.street}
-              status={employee.address.city}
+              fullname={employee.title}
+              email={employee.body}
+              role={employee.address.UserId}
+              status={employee.id}
             />
           ))}
         </div>
