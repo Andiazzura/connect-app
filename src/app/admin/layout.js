@@ -1,4 +1,4 @@
-import { IconKey, IconLogout, IconUser } from "@tabler/icons-react";
+import { IconActivity, IconKey, IconLogin, IconLogout, IconNews, IconPokeball, IconTableOptions, IconUser, IconWalk } from "@tabler/icons-react";
 export default function AdminLayout({ children }) {
   return (
     <div id="container" className="flex w-screen h-screen bg-white font-sans text-black">
@@ -12,7 +12,16 @@ export default function AdminLayout({ children }) {
             <IconKey size={20} /> Hak Akses
           </button>
           <button className="flex gap-2 items-center px-2 py-1 hover:bg-gray-100 rounded text-black">
-            <IconKey size={20} /> news 
+            <IconNews size={20} />  berita
+            </button>
+            <button className="flex gap-2 items-center px-2 py-1 hover:bg-gray-100 rounded text-black">
+            <IconWalk size={20} /> encounters
+            </button>
+            <button className="flex gap-2 items-center px-2 py-1 hover:bg-gray-100 rounded text-black">
+            <IconActivity size={20} /> lokasi
+            </button>
+            <button className="flex gap-2 items-center px-2 py-1 hover:bg-gray-100 rounded text-black">
+            <IconTableOptions size={20} /> items
             </button>
           <button className="flex gap-2 items-center px-2 py-1 hover:bg-gray-100 rounded text-black">
             <IconLogout size={20} /> Logout
